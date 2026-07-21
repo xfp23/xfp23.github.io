@@ -4,13 +4,198 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2026/07/15/hello-world/"/>
-    <url>/2026/07/15/hello-world/</url>
+    <title>随笔</title>
+    <link href="/2026/07/22/Whispers/01/"/>
+    <url>/2026/07/22/Whispers/01/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>風言風語</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>MicroOS</title>
+    <link href="/2026/07/22/MicroSeries/01/"/>
+    <url>/2026/07/22/MicroSeries/01/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Micro系列</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式C</tag>
+      
+      <tag>软件架构</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>人生的智慧</title>
+    <link href="/2026/07/22/LibraryPavilion/01/"/>
+    <url>/2026/07/22/LibraryPavilion/01/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>藏書閣</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>硬件踩坑測試</title>
+    <link href="/2026/07/22/Laboratory/01/"/>
+    <url>/2026/07/22/Laboratory/01/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>實驗室</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>嵌入式</tag>
+      
+      <tag>模拟电路</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>学习笔记测试</title>
+    <link href="/2026/07/22/KnowledgeBase/01/"/>
+    <url>/2026/07/22/KnowledgeBase/01/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>知識庫</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>MCU</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>下位机项目测试</title>
+    <link href="/2026/07/22/EngineLog/01/"/>
+    <url>/2026/07/22/EngineLog/01/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>工程誌</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>下位机</tag>
+      
+      <tag>MCU</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>书摘测试</title>
+    <link href="/2026/07/22/BookExcerpt/01/"/>
+    <url>/2026/07/22/BookExcerpt/01/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>書摘</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>叔本華</tag>
+      
+      <tag>哲學</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>DBC2C - 汽车电子CAN协议工具</title>
+    <link href="/2026/07/22/WorkShop/DBC2C/dbc2c/"/>
+    <url>/2026/07/22/WorkShop/DBC2C/dbc2c/</url>
+    
+    <content type="html"><![CDATA[<h1 id="DBC2C-——-让-CAN-协议开发回归工程本身"><a href="#DBC2C-——-让-CAN-协议开发回归工程本身" class="headerlink" title="DBC2C —— 让 CAN 协议开发回归工程本身"></a>DBC2C —— 让 CAN 协议开发回归工程本身</h1><p><a href="https://github.com/xfp23/DBC2C-dist/releases">软件更新地址</a></p><p>DBC2C 是一款面向汽车电子、工业控制及嵌入式开发的 CAN 协议工程工具。</p><p>它以 Excel 作为协议设计入口，实现协议文件、DBC 文件与代码之间的自动转换，让工程师摆脱重复、低效、容易出错的手工维护工作，把更多时间投入到真正有价值的开发中。</p><hr><h2 id="为什么选择-DBC2C？"><a href="#为什么选择-DBC2C？" class="headerlink" title="为什么选择 DBC2C？"></a>为什么选择 DBC2C？</h2><p>在实际项目中，协议通常以 Excel 的形式在客户、硬件工程师、软件工程师和测试工程师之间流转。</p><p>传统流程往往意味着：</p><ul><li>手工制作 DBC 文件</li><li>手工维护协议文档</li><li>手工编写解析代码</li><li>多份数据重复维护</li><li>一个字段修改后，需要同步多个文件</li></ul><p>任何一步遗漏，都可能导致协议错误、调试困难甚至项目延期。</p><p>DBC2C 将这些重复劳动全部自动化。</p><hr><h2 id="核心功能"><a href="#核心功能" class="headerlink" title="核心功能"></a>核心功能</h2><h3 id="Excel-→-DBC"><a href="#Excel-→-DBC" class="headerlink" title="Excel → DBC"></a>Excel → DBC</h3><p>根据统一的 Excel 协议模板，一键生成标准 DBC 文件。</p><p>无需重复录入协议信息，避免人工制作 DBC 带来的错误。</p><hr><h3 id="DBC-→-C-代码（专业版）"><a href="#DBC-→-C-代码（专业版）" class="headerlink" title="DBC → C 代码（专业版）"></a>DBC → C 代码（专业版）</h3><p>自动生成可直接使用的 C 代码，快速完成 CAN 报文收发、信号解析等工作。</p><p>与 MicroCAN 运行库配合使用，可进一步减少重复开发工作量。</p><hr><h3 id="DBC-→-Excel"><a href="#DBC-→-Excel" class="headerlink" title="DBC → Excel"></a>DBC → Excel</h3><p>支持将已有 DBC 文件快速导出为 Excel，方便协议整理、版本维护以及客户交付。</p><hr><h3 id="协议浏览器"><a href="#协议浏览器" class="headerlink" title="协议浏览器"></a>协议浏览器</h3><p>内置高速协议浏览界面，支持：</p><ul><li>报文浏览</li><li>信号浏览</li><li>实时搜索</li><li>快速定位</li></ul><p>面对大型 DBC 文件依然保持流畅体验。</p><hr><h2 id="为大型项目而设计"><a href="#为大型项目而设计" class="headerlink" title="为大型项目而设计"></a>为大型项目而设计</h2><p>采用异步解析与虚拟列表技术，即使面对包含数千个报文、上万个信号的协议文件，也能够保持界面流畅响应。</p><p>无需等待，无需卡顿。</p><hr><h2 id="一个数据源，贯穿整个开发流程"><a href="#一个数据源，贯穿整个开发流程" class="headerlink" title="一个数据源，贯穿整个开发流程"></a>一个数据源，贯穿整个开发流程</h2><p>DBC2C 提倡以 Excel 作为协议唯一数据源：</p><p>Excel</p><p>↓</p><p>DBC</p><p>↓</p><p>代码</p><p>↓</p><p>测试</p><p>↓</p><p>文档</p><p>一次维护，多处生成。</p><p>减少重复劳动，降低维护成本。</p><hr><h2 id="面向工程，而非演示"><a href="#面向工程，而非演示" class="headerlink" title="面向工程，而非演示"></a>面向工程，而非演示</h2><p>DBC2C 并不是一个简单的格式转换工具。</p><p>它源于真实项目中的工程痛点，服务于实际开发流程。</p><p>每一个功能都围绕一个目标：</p><p>减少重复劳动，提高开发效率。</p><hr><h2 id="DBC2C-Pro"><a href="#DBC2C-Pro" class="headerlink" title="DBC2C Pro"></a>DBC2C Pro</h2><p>专业版提供完整的自动代码生成功能，进一步打通协议设计与代码实现之间的流程，为 CAN 通信开发提供更加高效、稳定的工程体验。</p><p>DBC2C，让协议开发更简单，让工程师专注于真正重要的工作。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>工坊</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>汽车电子</tag>
+      
+      <tag>CAN</tag>
+      
+    </tags>
     
   </entry>
   
