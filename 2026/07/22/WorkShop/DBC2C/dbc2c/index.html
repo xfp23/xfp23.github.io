@@ -35,9 +35,10 @@
 <meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/Message.png">
 <meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/Excel.png">
 <meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/SelectExcel.png">
-<meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/Search.png">
+<meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/SearchName.png">
+<meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/SearchID.png">
 <meta property="article:published_time" content="2026-07-21T16:42:00.650Z">
-<meta property="article:modified_time" content="2026-07-26T17:43:57.143Z">
+<meta property="article:modified_time" content="2026-07-26T18:14:07.545Z">
 <meta property="article:author" content="風">
 <meta property="article:tag" content="CAN">
 <meta property="article:tag" content="汽车电子">
@@ -594,10 +595,12 @@
 </ul>
 <hr>
 <h2 id="9-搜索功能"><a href="#9-搜索功能" class="headerlink" title="9. 搜索功能"></a>9. 搜索功能</h2><h3 id="9-1-按名称搜索"><a href="#9-1-按名称搜索" class="headerlink" title="9.1 按名称搜索"></a>9.1 按名称搜索</h3><p>支持报文名称模糊搜索。例如输入 <code>TMS</code>，可以匹配 <code>TMS_STA1</code>、<code>TMS_Sta2</code>、<code>TMS_sta3</code> 三条报文。</p>
-<h3 id="9-2-按-ID-搜索"><a href="#9-2-按-ID-搜索" class="headerlink" title="9.2 按 ID 搜索"></a>9.2 按 ID 搜索</h3><p>支持按 CAN ID 搜索，采用全字符匹配。输入十六进制 ID 即可，无需添加 <code>0x</code> 前缀，例如直接输入 <code>18FFxxxx</code>。</p>
-<p>搜索完成后，点击 <code>x 清除</code> 即可恢复到搜索前的页面。</p>
-<img src="/2026/07/22/WorkShop/DBC2C/dbc2c/Search.png" srcset="/img/loading.gif" lazyload class="" title="搜索预览">
+<img src="/2026/07/22/WorkShop/DBC2C/dbc2c/SearchName.png" srcset="/img/loading.gif" lazyload class="" title="搜索预览">
 
+<h3 id="9-2-按-ID-搜索"><a href="#9-2-按-ID-搜索" class="headerlink" title="9.2 按 ID 搜索"></a>9.2 按 ID 搜索</h3><p>支持按 CAN ID 搜索，采用全字符匹配。输入十六进制 ID 即可，无需添加 <code>0x</code> 前缀，例如直接输入 <code>18FFxxxx</code>。</p>
+<img src="/2026/07/22/WorkShop/DBC2C/dbc2c/SearchID.png" srcset="/img/loading.gif" lazyload class="" title="搜索预览">
+
+<p>搜索完成后，点击 <code>x 清除</code> 即可恢复到搜索前的页面。</p>
 <hr>
 <h2 id="10-代码集成与使用"><a href="#10-代码集成与使用" class="headerlink" title="10. 代码集成与使用"></a>10. 代码集成与使用</h2><h3 id="10-1-MicroCAN-集成"><a href="#10-1-MicroCAN-集成" class="headerlink" title="10.1 MicroCAN 集成"></a>10.1 MicroCAN 集成</h3><p>DBC2C 生成的 C 代码依赖 MicroCAN 运行库。生成代码时，DBC2C 会自动生成对应的 MicroCAN 目录，用户只需将该目录加入工程即可，无需额外配置。</p>
 <p>生成的目录结构：</p>
