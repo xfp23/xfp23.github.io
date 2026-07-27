@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/SearchName.png">
 <meta property="og:image" content="https://xfp23.github.io/2026/07/22/WorkShop/DBC2C/dbc2c/SearchID.png">
 <meta property="article:published_time" content="2026-07-21T16:42:00.650Z">
-<meta property="article:modified_time" content="2026-07-27T01:13:17.236Z">
+<meta property="article:modified_time" content="2026-07-27T01:41:21.331Z">
 <meta property="article:author" content="風">
 <meta property="article:tag" content="CAN">
 <meta property="article:tag" content="汽车电子">
@@ -396,7 +396,7 @@
                 
                 <h1 id="DBC2C-——-让-CAN-协议开发回归工程本身"><a href="#DBC2C-——-让-CAN-协议开发回归工程本身" class="headerlink" title="DBC2C —— 让 CAN 协议开发回归工程本身"></a>DBC2C —— 让 CAN 协议开发回归工程本身</h1><p><a target="_blank" rel="noopener" href="https://github.com/xfp23/DBC2C-dist/releases">软件更新地址</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/xfp23/DBC2C-dist/tree/main/License">许可证获取地址</a></p>
-<p><a href="mailto:&#120;&#102;&#112;&#x35;&#55;&#48;&#54;&#52;&#64;&#x6f;&#117;&#x74;&#x6c;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#x6f;&#x6d;">联系作者</a></p>
+<p><a href="mailto:&#120;&#x66;&#x70;&#53;&#x37;&#x30;&#x36;&#52;&#64;&#111;&#117;&#116;&#x6c;&#111;&#x6f;&#107;&#x2e;&#x63;&#111;&#109;">联系作者</a></p>
 <p>DBC2C 是一款面向汽车电子、工业控制及嵌入式开发的 CAN 协议工程工具。</p>
 <p>它以 Excel 作为协议设计入口，实现 Excel、DBC 文件与 C 代码之间的自动转换，帮助工程师摆脱重复性的协议维护工作，提升 CAN 通信开发的效率与可靠性。</p>
 <hr>
@@ -404,7 +404,7 @@
 <li>Excel ↔ DBC 双向转换</li>
 <li>DBC 文件解析</li>
 <li>自动生成 CAN 信号描述代码</li>
-<li>自动生成 MicroCAN 协议解析库</li>
+<li>自动生成 <a target="_blank" rel="noopener" href="https://github.com/xfp23/MicroCAN.git">MicroCAN</a> 协议解析库</li>
 <li>支持 Intel &#x2F; Motorola 字节序</li>
 <li>支持报文与信号合法性检查</li>
 <li>支持报文名称、ID 快速搜索</li>
@@ -417,7 +417,7 @@
 <li>数据描述生成</li>
 <li>C 代码生成</li>
 </ul>
-<p>而运行时的报文解包&#x2F;打包则交由独立的 MicroCAN 库完成。</p>
+<p>而运行时的报文解包&#x2F;打包则交由独立的 <a target="_blank" rel="noopener" href="https://github.com/xfp23/MicroCAN.git">MicroCAN</a> 库完成。</p>
 <p>这样设计可以避免协议描述逻辑与业务代码强耦合，使生成的代码更容易维护和移植。</p>
 <hr>
 <h2 id="2-项目背景"><a href="#2-项目背景" class="headerlink" title="2. 项目背景"></a>2. 项目背景</h2><h3 id="2-1-从人工解析到自动化工具"><a href="#2-1-从人工解析到自动化工具" class="headerlink" title="2.1 从人工解析到自动化工具"></a>2.1 从人工解析到自动化工具</h3><p>在汽车 ECU 开发过程中，CAN 通信协议通常需要同时维护 Excel 矩阵、DBC 文件以及 ECU 端解析代码。传统开发方式往往依赖人工完成信号定义维护、DBC 文件编辑、C 代码编写和位域解析，这种方式不仅效率较低，还容易因人为疏漏导致协议不一致。</p>
@@ -431,7 +431,7 @@
 <h2 id="3-软件架构"><a href="#3-软件架构" class="headerlink" title="3. 软件架构"></a>3. 软件架构</h2><p>DBC2C 的整体数据流程如下：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs text">          Excel<br>            │<br>            ▼<br>          DBC2C<br>   ┌────────┴────────┐<br>   ▼                 ▼<br>DBC 文件          C 描述代码<br>                      │<br>                      ▼<br>                  MicroCAN<br>                      │<br>                      ▼<br>                 ECU 应用程序<br></code></pre></td></tr></table></figure>
 
-<p>工具负责生成协议描述层（DBC &#x2F; C 描述代码），运行时的实际打包与解包交给 MicroCAN 库完成，二者相互独立、职责清晰。</p>
+<p>工具负责生成协议描述层（DBC &#x2F; C 描述代码），运行时的实际打包与解包交给 <a target="_blank" rel="noopener" href="https://github.com/xfp23/MicroCAN.git">MicroCAN</a> 库完成，二者相互独立、职责清晰。</p>
 <hr>
 <h2 id="4-核心功能"><a href="#4-核心功能" class="headerlink" title="4. 核心功能"></a>4. 核心功能</h2><h3 id="4-1-DBC-解析"><a href="#4-1-DBC-解析" class="headerlink" title="4.1 DBC 解析"></a>4.1 DBC 解析</h3><p>DBC2C 自主实现了 DBC 文件解析模块，无需依赖任何大型第三方 DBC 解析框架。</p>
 <p>主要功能包括：</p>
@@ -495,7 +495,7 @@
 <p>选择需要生成的报文后，点击”生成”按钮，即可在输出目录中得到以下文件：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs text"><br>CAN_Test.xlsx<br>CAN_Test_dbc2c_can_desc.c<br>CAN_Test_dbc2c_can_desc.h<br>MicroCAN/<br></code></pre></td></tr></table></figure>
 
-<p>生成按钮旁边的”仅生成 Excel”复选框勾选后，将只生成 Excel 文件，不会生成 C 代码和 MicroCAN 库；该选项仅专业版许可证可以取消勾选，标准版用户无法使用此功能。</p>
+<p>生成按钮旁边的”仅生成 Excel”复选框勾选后，将只生成 Excel 文件，不会生成 C 代码和 <a target="_blank" rel="noopener" href="https://github.com/xfp23/MicroCAN.git">MicroCAN</a> 库；该选项仅专业版许可证可以取消勾选，标准版用户无法使用此功能。</p>
 <hr>
 <h2 id="7-Excel-文件解析"><a href="#7-Excel-文件解析" class="headerlink" title="7. Excel 文件解析"></a>7. Excel 文件解析</h2><h3 id="7-1-Excel-模板"><a href="#7-1-Excel-模板" class="headerlink" title="7.1 Excel 模板"></a>7.1 Excel 模板</h3><img src="/2026/07/22/WorkShop/DBC2C/dbc2c/Excel.png" srcset="/img/loading.gif" lazyload class="" title="模板Excel示例">
 
@@ -602,7 +602,7 @@
 
 <p>搜索完成后，点击 <code>x 清除</code> 即可恢复到搜索前的页面。</p>
 <hr>
-<h2 id="10-代码集成与使用"><a href="#10-代码集成与使用" class="headerlink" title="10. 代码集成与使用"></a>10. 代码集成与使用</h2><h3 id="10-1-MicroCAN-集成"><a href="#10-1-MicroCAN-集成" class="headerlink" title="10.1 MicroCAN 集成"></a>10.1 MicroCAN 集成</h3><p>DBC2C 生成的 C 代码依赖 MicroCAN 运行库。生成代码时，DBC2C 会自动生成对应的 MicroCAN 目录，用户只需将该目录加入工程即可，无需额外配置。</p>
+<h2 id="10-代码集成与使用"><a href="#10-代码集成与使用" class="headerlink" title="10. 代码集成与使用"></a>10. 代码集成与使用</h2><h3 id="10-1-MicroCAN-集成"><a href="#10-1-MicroCAN-集成" class="headerlink" title="10.1 MicroCAN 集成"></a>10.1 MicroCAN 集成</h3><p>DBC2C 生成的 C 代码依赖 <a target="_blank" rel="noopener" href="https://github.com/xfp23/MicroCAN.git">MicroCAN</a> 运行库。生成代码时，DBC2C 会自动生成对应的 MicroCAN 目录，用户只需将该目录加入工程即可，无需额外配置。</p>
 <p>生成的目录结构：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs text">Project<br>│<br>├── CAN_Test_dbc2c_can_desc.c<br>├── CAN_Test_dbc2c_can_desc.h<br>│<br>└── MicroCAN<br>    ├── include<br>    │   ├── MicroCAN.h<br>    │   └── MicroCAN_types.h<br>    │<br>    └── src<br>        └── MicroCAN.c<br></code></pre></td></tr></table></figure>
 
@@ -614,8 +614,8 @@
 <h3 id="10-2-初始化协议描述"><a href="#10-2-初始化协议描述" class="headerlink" title="10.2 初始化协议描述"></a>10.2 初始化协议描述</h3><p>在使用任何报文解析接口之前，需要先调用初始化函数：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;CAN_Test_dbc2c_can_desc.h&quot;</span></span><br><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span><br>&#123;<br>    CAN_Test_dbc2c_can_desc_Init();<br><br>    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>)<br>    &#123;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>初始化函数会完成 CAN 报文描述绑定、信号表初始化，以及与 MicroCAN 运行时的关联。</p>
-<h3 id="10-3-访问信号"><a href="#10-3-访问信号" class="headerlink" title="10.3 访问信号"></a>10.3 访问信号</h3><p>DBC2C 会自动生成 MicroCAN 所需的访问索引，命名规则如下：</p>
+<p>初始化函数会完成 CAN 报文描述绑定、信号表初始化，以及与 <a target="_blank" rel="noopener" href="https://github.com/xfp23/MicroCAN.git">MicroCAN</a> 运行时的关联。</p>
+<h3 id="10-3-访问信号"><a href="#10-3-访问信号" class="headerlink" title="10.3 访问信号"></a>10.3 访问信号</h3><p>DBC2C 会自动生成 <a target="_blank" rel="noopener" href="https://github.com/xfp23/MicroCAN.git">MicroCAN</a> 所需的访问索引，命名规则如下：</p>
 <ul>
 <li><strong>报文</strong>：<code>报文名称_msg</code>，例如 <code>PackIntelTest_msg</code></li>
 <li><strong>信号</strong>：<code>报文名称_信号名称</code>（全大写），例如 <code>PACKINTELTEST_TESTU8</code></li>
